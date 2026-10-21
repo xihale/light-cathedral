@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#000">
+<title>光之殿 · Tyndall Cathedral</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<button id="cal" title="校准 / Recenter">◎</button>
+<div id="err">此设备不支持 WebGL2，无法渲染光之殿。</div>
+
+  <script src="shaders/vs.js"></script>
+  <script src="shaders/bake.js"></script>
+  <script src="shaders/scene.js"></script>
+  <script src="shaders/temporal.js"></script>
+  <script src="shaders/down.js"></script>
+  <script src="shaders/blur.js"></script>
+  <script src="shaders/comp.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

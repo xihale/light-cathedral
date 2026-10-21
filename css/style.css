@@ -1,0 +1,5 @@
+html,body{margin:0;height:100%;background:#000;overflow:hidden;overscroll-behavior:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none}
+#cal{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(env(safe-area-inset-bottom) + 16px);width:38px;height:38px;border-radius:50%;border:1px solid rgba(233,220,192,.28);background:rgba(0,0,0,.2);color:#e9dcc0;font-size:15px;opacity:0;pointer-events:none;transition:opacity 1.2s;cursor:pointer}
+#cal.on{opacity:.55;pointer-events:auto}
+#err{position:fixed;inset:0;display:none;align-items:center;justify-content:center;color:#cbb88f;font:14px/1.8 sans-serif;text-align:center;padding:24px}
