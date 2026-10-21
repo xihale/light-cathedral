@@ -153,7 +153,7 @@ function loop(now){
   gl.uniform2f(U(P.scene,'uRes'),S.w,S.h);
   gl.uniform1f(U(P.scene,'uTime'),time); gl.uniform1f(U(P.scene,'uFrame'),frame%1024);
   gl.uniform1f(U(P.scene,'uTanH'),tanH); gl.uniform1f(U(P.scene,'uPitch'),pitch);
-  gl.uniform1f(U(P.scene,'uSun'),3.0); gl.uniform1f(U(P.scene,'uDens'),0.05);
+  gl.uniform1f(U(P.scene,'uSun'),3.0); gl.uniform1f(U(P.scene,'uDens'),0.03);
   gl.uniform1f(U(P.scene,'uPre'),pre); gl.uniform1f(U(P.scene,'uWinI'),2.0);
   gl.uniform3f(U(P.scene,'uL'),L[0],L[1],L[2]);
   gl.uniform1fv(U(P.scene,'uQc'),qc); gl.uniform1fv(U(P.scene,'uZk'),zk);

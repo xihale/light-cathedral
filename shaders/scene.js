@@ -35,8 +35,8 @@ vec3 lightVis(vec3 P){
 }
 float haze(vec3 P){
   float h=exp(-P.y*0.07);
-  float n=1.+0.35*sin(P.x*0.8+P.z*0.45+uTime*0.12)*sin(P.y*0.6-uTime*0.09+P.z*0.37)
-           +0.2*sin(P.x*1.9-P.z*0.9+P.y*1.3+uTime*0.2);
+  float n=1.+0.18*sin(P.x*0.8+P.z*0.45+uTime*0.12)*sin(P.y*0.6-uTime*0.09+P.z*0.37)
+           +0.1*sin(P.x*1.9-P.z*0.9+P.y*1.3+uTime*0.2);
   return uDens*(0.5+0.5*h)*max(n,0.2);
 }
 void main(){
